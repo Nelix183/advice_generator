@@ -1,0 +1,88 @@
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+*{
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: var(--Dark-Blue);
+}
+main{
+    width: 33%;
+    background: var(--Dark-Grayish-Blue);
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+h1{
+    font-size: 14px;
+    color: var(--Neon-Green);
+    margin: 20px;
+    letter-spacing: 5px;
+}
+p{
+    font-size: 28px;
+    color: var(--Light-Cyan);
+}
+.foot{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px auto;
+}
+.hr{
+    border-bottom: 1px var(--Grayish-Blue) solid;
+    width: 46%;
+}
+.vr{
+    border-left: 4px var(--Light-Cyan) solid;
+    height: 10px;
+}
+.dice{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, +50%, 0);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--Neon-Green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dice:hover{
+    box-shadow: 0px 0px 35px var(--Neon-Green);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    color: white;
+}
+.attribution a {
+    color: white;
+}
+
+@media only screen and (max-width: 500px) {
+    main{
+        width: 80%;
+        min-height: fit-content;
+    }
+}
